@@ -1,0 +1,24 @@
+//
+//  Common.pch
+//  AddressPickDemo
+//
+//  Created by 张建 on 16/2/19.
+//  Copyright © 2016年 连藤网络科技公司. All rights reserved.
+//
+
+
+#ifndef Common_pch
+#define Common_pch
+
+#import "UIViewExt.h"
+
+
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define windowColor  [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2]
+
+
+#endif /* Common_pch */
+
+

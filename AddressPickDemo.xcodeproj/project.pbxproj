@@ -16,6 +16,9 @@
 		025A609D1C76B26500CEC9D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025A609B1C76B26500CEC9D1 /* LaunchScreen.storyboard */; };
 		025A60A81C76B26500CEC9D1 /* AddressPickDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 025A60A71C76B26500CEC9D1 /* AddressPickDemoTests.m */; };
 		025A60B31C76B26500CEC9D1 /* AddressPickDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 025A60B21C76B26500CEC9D1 /* AddressPickDemoUITests.m */; };
+		025A60CD1C76B53C00CEC9D1 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 025A60CC1C76B53C00CEC9D1 /* UIViewExt.m */; };
+		026AFCF01C76C47E005C54A6 /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 026AFCEF1C76C47E005C54A6 /* Address.plist */; };
+		026AFCF31C76C48F005C54A6 /* AddressPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 026AFCF21C76C48F005C54A6 /* AddressPickView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		025A60AE1C76B26500CEC9D1 /* AddressPickDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressPickDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		025A60B21C76B26500CEC9D1 /* AddressPickDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressPickDemoUITests.m; sourceTree = "<group>"; };
 		025A60B41C76B26500CEC9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025A60CA1C76B53C00CEC9D1 /* Common.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.pch; sourceTree = "<group>"; };
+		025A60CB1C76B53C00CEC9D1 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		025A60CC1C76B53C00CEC9D1 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		026AFCEF1C76C47E005C54A6 /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Address.plist; sourceTree = "<group>"; };
+		026AFCF11C76C48F005C54A6 /* AddressPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPickView.h; sourceTree = "<group>"; };
+		026AFCF21C76C48F005C54A6 /* AddressPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPickView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,8 @@
 		025A60891C76B26500CEC9D1 /* AddressPickDemo */ = {
 			isa = PBXGroup;
 			children = (
+				026AFCEE1C76C46D005C54A6 /* AddressPick */,
+				025A60C91C76B53C00CEC9D1 /* Common */,
 				025A608D1C76B26500CEC9D1 /* AppDelegate.h */,
 				025A608E1C76B26500CEC9D1 /* AppDelegate.m */,
 				025A60901C76B26500CEC9D1 /* ViewController.h */,
@@ -141,6 +152,26 @@
 				025A60B41C76B26500CEC9D1 /* Info.plist */,
 			);
 			path = AddressPickDemoUITests;
+			sourceTree = "<group>";
+		};
+		025A60C91C76B53C00CEC9D1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				025A60CA1C76B53C00CEC9D1 /* Common.pch */,
+				025A60CB1C76B53C00CEC9D1 /* UIViewExt.h */,
+				025A60CC1C76B53C00CEC9D1 /* UIViewExt.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		026AFCEE1C76C46D005C54A6 /* AddressPick */ = {
+			isa = PBXGroup;
+			children = (
+				026AFCEF1C76C47E005C54A6 /* Address.plist */,
+				026AFCF11C76C48F005C54A6 /* AddressPickView.h */,
+				026AFCF21C76C48F005C54A6 /* AddressPickView.m */,
+			);
+			path = AddressPick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				025A609D1C76B26500CEC9D1 /* LaunchScreen.storyboard in Resources */,
+				026AFCF01C76C47E005C54A6 /* Address.plist in Resources */,
 				025A609A1C76B26500CEC9D1 /* Assets.xcassets in Resources */,
 				025A60951C76B26500CEC9D1 /* Main.storyboard in Resources */,
 			);
@@ -275,7 +307,9 @@
 			files = (
 				025A60921C76B26500CEC9D1 /* ViewController.m in Sources */,
 				025A608F1C76B26500CEC9D1 /* AppDelegate.m in Sources */,
+				025A60CD1C76B53C00CEC9D1 /* UIViewExt.m in Sources */,
 				025A60981C76B26500CEC9D1 /* AddressPickDemo.xcdatamodeld in Sources */,
+				026AFCF31C76C48F005C54A6 /* AddressPickView.m in Sources */,
 				025A608C1C76B26500CEC9D1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -415,7 +449,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AddressPickDemo/Common/Common.pch;
 				INFOPLIST_FILE = AddressPickDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lianteng.AddressPickDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +463,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AddressPickDemo/Common/Common.pch;
 				INFOPLIST_FILE = AddressPickDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lianteng.AddressPickDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +540,7 @@
 				025A60B91C76B26500CEC9D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		025A60BA1C76B26500CEC9D1 /* Build configuration list for PBXNativeTarget "AddressPickDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +549,7 @@
 				025A60BC1C76B26500CEC9D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		025A60BD1C76B26500CEC9D1 /* Build configuration list for PBXNativeTarget "AddressPickDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +558,7 @@
 				025A60BF1C76B26500CEC9D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
